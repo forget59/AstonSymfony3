@@ -1,0 +1,29 @@
+IKNSA\PostBundle\Entity\Post:
+    type: entity
+    table: null
+    repositoryClass: IKNSA\PostBundle\Repository\PostRepository
+    id:
+        id:
+            type: integer
+            id: true
+            generator:
+                strategy: AUTO
+    fields:
+        titre:
+            type: string
+            length: 255
+        resume:
+            type: string
+            length: 255
+            nullable: true
+        contenu:
+            type: text
+        file:
+            type: string
+            length: 255
+        user:
+            type: string
+            length: 255
+        creation:
+            type: datetime
+    lifecycleCallbacks: {  }
